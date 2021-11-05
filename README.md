@@ -47,13 +47,13 @@ packer build server.json
 ### Customization
 
 The [variables](variables.tf) file contains variables that can be used to customize the deployment. Azure policy for the subscription requires tags. The tags variable can be used to change tags to identify the resources used for a particular deployment. 
-[[https://github.com/jmcole/Deploying-a-WebServer-in-Azure/blob/main/images/az-list2.PNG]]
+![Azure Tag Policy](https://github.com/jmcole/Deploying-a-WebServer-in-Azure/blob/main/images/az-list2.PNG)
 In addition, the "Client" variable will attach a prefix that can be used to further tie resources to a particular customer or department. Names for Resource groups and images can be modified through the [variables](variables.tf) file. The Azure location and the number of instances created can also be modified.
 
 ### Output
 
 Azure Created Resources
-[[https://github.com/jmcole/Deploying-a-WebServer-in-Azure/blob/main/images/all_resources.PNG]]
+![Azure Resources](https://github.com/jmcole/Deploying-a-WebServer-in-Azure/blob/main/images/all_resources.PNG)
 
 
 Terraform Output from Terraform Apply
